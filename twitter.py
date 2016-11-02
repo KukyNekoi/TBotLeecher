@@ -88,7 +88,7 @@ def leech_hashtag(hashtag, count):
                             download_video(hashtag["hashtag"],str(item["id"]),link)
             if int(item["id"]) > max_id:
                 max_id = int(item["id"])
-                update_user_id(hashtag["hashtag"], max_id)
+                update_hashtag_id(hashtag["hashtag"], max_id)
 
 
 def download_media(username, url):
