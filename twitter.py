@@ -67,8 +67,6 @@ def leech_hashtag(hashtag, count):
     for item in request:
         if  int(item["id"]) > current_id:
             
-            print "new Item"
-            print item
             if 'entities' in item:
                 if 'media' in item["entities"]:
                     for media in item["entities"]["media"]:
